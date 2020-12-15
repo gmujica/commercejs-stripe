@@ -5,13 +5,8 @@ import Product from './Product'
 
 import useStyles from './styles'
 
-const products = [
-    {id: 1, name: 'Shoes', description: 'Running shoes.', price: '$5', image: 'https://images.ctfassets.net/od02wyo8cgm5/5kpFyd0r2uP97j7TIwahLc/49be548876c61e93ac58efab04906d5f/cloud_waterproof_2-fw19-black_lunar-w-g1.png'},
-    {id: 2, name: 'Macbook', description: 'Apple macbook.', price: '$100', image:'https://i.blogs.es/e1fe2b/apple-macbook-pro-16/1366_2000.jpg'},
-]
-
 //layout
-const Products = () => {
+const Products = ({ products }) => {
     const classes = useStyles()
     return (
         <main className={classes.content}>
